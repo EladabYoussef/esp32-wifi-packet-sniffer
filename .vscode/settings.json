@@ -1,0 +1,19 @@
+{
+  "C_Cpp.default.includePath": [
+    "${workspaceFolder}/include/**",
+    "${workspaceFolder}/lib/**",
+    "${workspaceFolder}/.pio/libdeps/**"
+  ],
+  "C_Cpp.default.compilerPath": "${workspaceFolder}/.pio/build/esp32/compiler",
+  "files.associations": {
+    "*.ino": "cpp"
+  },
+  "editor.defaultFormatter": "ms-vscode.cpptools",
+  "[cpp]": {
+    "editor.defaultFormatter": "ms-vscode.cpptools",
+    "editor.formatOnSave": true
+  },
+  "[h]": {
+    "editor.defaultFormatter": "ms-vscode.cpptools"
+  }
+}
