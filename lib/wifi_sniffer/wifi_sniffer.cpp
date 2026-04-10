@@ -1,6 +1,5 @@
 #include "wifi_sniffer.h"
 
-// IP header structure for parsing
 struct ip_header
 {
     unsigned char version_length;
@@ -15,7 +14,6 @@ struct ip_header
     unsigned int ip_dst;
 };
 
-// TCP header structure
 struct tcp_header
 {
     unsigned short src_port;
@@ -29,7 +27,6 @@ struct tcp_header
     unsigned short urgent;
 };
 
-// UDP header structure
 struct udp_header
 {
     unsigned short src_port;
@@ -38,7 +35,6 @@ struct udp_header
     unsigned short checksum;
 };
 
-// Global flow database
 std::map<uint32_t, NetworkFlow> flowDatabase;
 
 // Convert IP address integer to string
